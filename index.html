@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách Nhân vật</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      width: 200px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      text-decoration: none; /* bỏ gạch chân */
+      color: inherit; /* giữ màu chữ tự nhiên */
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Danh sách Nhân vật</h1>
+
+<div class="card-container">
+  <a href="PY.html" class="card">
+    <img src="images/py.jpg" alt="PhongYên">
+    <h3>Harry Potter</h3>
+  </a>
+
+  <a href="Cl.html" class="card">
+    <img src="images/Cle.jpg" alt="Clemente">
+    <h3>Hermione Granger</h3>
+  </a>
+
+  <a href="NK.html" class="card">
+    <img src="images/NK.jpg" alt="Yi Jian">
+    <h3>Ron Weasley</h3>
+  </a>
+</div>
+
+</body>
+</html>
